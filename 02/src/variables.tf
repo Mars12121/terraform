@@ -3,11 +3,13 @@
 
 variable "cloud_id" {
   type        = string
+  default     = "b1g1p3iuj1ipsdi8dqkk"
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/cloud/get-id"
 }
 
 variable "folder_id" {
   type        = string
+  default     = "b1g14i5i1tfp5ml6rhlm"
   description = "https://cloud.yandex.ru/docs/resource-manager/operations/folder/get-id"
 }
 
@@ -28,11 +30,40 @@ variable "vpc_name" {
   description = "VPC network & subnet name"
 }
 
+# variable "vm_web_family" {
+#   type        = string
+#   default     = "ubuntu-2004-lts"
+# }
+
+# variable "vm_web_name" {
+#   type        = string
+#   default     = "netology-develop-platform-web"
+# }
+
+# variable "vm_web_platform_id" {
+#   type        = string
+#   default     = "standard-v1"
+# }
+
+# variable "vm_web_cores" {
+#   type        = string
+#   default     = "2"
+# }
+
+# variable "vm_web_memory" {
+#   type        = string
+#   default     = "1"
+# }
+
+# variable "vm_web_core_fraction" {
+#   type        = string
+#   default     = "5"
+# }
 
 ###ssh vars
 
 variable "vms_ssh_root_key" {
   type        = string
-  default     = "<your_ssh_ed25519_key>"
+  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFhtZEIXS76S7TWHHp2ht9DVK0Bu9EA67tzrolNNxMM9 admin@MacBook-Pro-admin.local"
   description = "ssh-keygen -t ed25519"
 }
